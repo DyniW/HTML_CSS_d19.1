@@ -1,0 +1,465 @@
+@charset "UTF-8";
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+/* line 7, ../sass/ie.scss */
+body {
+  background-color: #ffffb3;
+  /*background-image: url(ubi30_gh.jpg);
+  background-attachment: fixed;*/
+}
+
+/* line 14, ../sass/ie.scss */
+#main {
+  width: 75%;
+  margin: auto;
+}
+
+/* line 20, ../sass/ie.scss */
+h1, em {
+  color: fireBrick;
+  font-family: 'Amarillo', georgia;
+  text-align: center;
+  font-style: normal;
+}
+
+/* line 28, ../sass/ie.scss */
+h1 {
+  font-size: 60px;
+  text-shadow: 4px 2px 4px black;
+}
+
+/* line 34, ../sass/ie.scss */
+h1 + p em {
+  color: darkSlateGray;
+}
+
+/*em
+{
+	color: red;
+}
+*/
+/* line 45, ../sass/ie.scss */
+.introduction {
+  color: black;
+  text-decoration: underline;
+  border: 2px #ff3333 ridge;
+  text-align: center;
+  padding-top: 1%;
+  /*border-radius: 20px*/
+  box-shadow: 0px 5px 20px black;
+  margin-right: 300px;
+  margin-left: 300px;
+}
+
+/* line 63, ../sass/ie.scss */
+.salutations {
+  color: blue;
+}
+
+@font-face {
+  font-family: 'Amarillo';
+  src: url("../Amarillo/Amarillo.otf") format("otf"), url("../Amarillo/Amarillo.ttf") format("truetype");
+}
+/* line 75, ../sass/ie.scss */
+li[id="projet1"] {
+  color: #b30000;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* line 84, ../sass/ie.scss */
+figure {
+  text-align: center;
+}
+
+/* line 89, ../sass/ie.scss */
+.imageFlottante {
+  float: left;
+}
+
+/* line 94, ../sass/ie.scss */
+.dessous {
+  clear: both;
+}
+
+/* line 99, ../sass/ie.scss */
+mark {
+  background-color: white;
+}
+
+/* line 104, ../sass/ie.scss */
+figcaption {
+  opacity: 0.8;
+}
+
+/* line 109, ../sass/ie.scss */
+a:hover {
+  text-decoration: underline;
+  color: #b30000;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 118, ../sass/ie.scss */
+a:active {
+  background-color: #FFCC66;
+}
+
+/* line 123, ../sass/ie.scss */
+a:focus {
+  background-color: #FFCC66;
+}
+
+/* line 128, ../sass/ie.scss */
+a:visited {
+  color: #595959;
+  /* Appliquer une couleur grise */
+}
+
+/* line 133, ../sass/ie.scss */
+.p {
+  width: 50%;
+  height: 8em;
+  overflow: auto;
+  text-align: center;
+  text-align: justify;
+  margin-left: 25%;
+}
+
+/* line 143, ../sass/ie.scss */
+#conteneur {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: start;
+  margin-top: 10%;
+}
+
+/* line 153, ../sass/ie.scss */
+.element:nth-child(2) {
+  /*align-self: flex-start; /* Seul ce bloc sera aligné au début */
+  order: 1;
+  /*flex: 1;*/
+}
+
+/* line 160, ../sass/ie.scss */
+.element:nth-child(1) {
+  /*align-self: flex-end;*/
+  order: 3;
+  /*flex: 2;*/
+  margin-left: 2%;
+}
+
+/* line 169, ../sass/ie.scss */
+.element:nth-child(3) {
+  order: 2;
+  margin-left: 2%;
+}
+
+/*tableaux*/
+/* line 177, ../sass/ie.scss */
+td {
+  border: 1px solid black;
+}
+
+/* line 182, ../sass/ie.scss */
+table {
+  border-collapse: collapse;
+  caption-side: bottom;
+}
+
+/* line 188, ../sass/ie.scss */
+header {
+  position: fixed;
+  background-color: red;
+  margin-left: 30.5%;
+  display: inline;
+}
+
+/* line 196, ../sass/ie.scss */
+#ad {
+  position: fixed;
+  margin-left: 75%;
+  margin-top: 15%;
+  width: 25%;
+}
+
+/* line 204, ../sass/ie.scss */
+#ad2 {
+  position: absolute;
+  margin-top: 10%;
+}
+
+/* line 210, ../sass/ie.scss */
+#banniere_image {
+  margin-left: 25%;
+  margin-top: 15%;
+  height: 200px;
+  border-radius: 5px;
+  background: url("../stand.jpg") no-repeat;
+  position: relative;
+  box-shadow: 0px 4px 4px #1c1a19;
+  margin-bottom: 25px;
+  width: 50%;
+}
+
+/* line 223, ../sass/ie.scss */
+#banniere_description {
+  position: absolute;
+  bottom: 0px;
+  border-radius: 0px 0px 5px 5px;
+  width: 99.5%;
+  height: 33px;
+  padding-top: 15px;
+  padding-left: 4px;
+  background-color: rgba(24, 24, 24, 0.8);
+  color: white;
+  font-size: 0.8em;
+  font-family: 'trebuchet MS', Arial, sans-serif;
+}
+
+/* line 238, ../sass/ie.scss */
+.bouton_rouge {
+  height: 25px;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  background: url("fond_degraderouge.png") repeat-x;
+  border: 1px solid #760001;
+  border-radius: 5px;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 3px 8px 0px 8px;
+  color: black;
+  text-decoration-color: none;
+}
+
+/* line 254, ../sass/ie.scss */
+a.bouton_rouge {
+  color: white;
+}
+
+/* line 259, ../sass/ie.scss */
+h2 {
+  font-style: bold;
+}
+
+/* line 264, ../sass/ie.scss */
+#foot {
+  flex: 1;
+}
+
+/* line 269, ../sass/ie.scss */
+#photos {
+  flex: 1;
+}
+
+/* line 274, ../sass/ie.scss */
+#articles {
+  flex: 1;
+}
+
+/* line 279, ../sass/ie.scss */
+#reseaux {
+  flex: 1;
+}
+
+/* line 284, ../sass/ie.scss */
+footer p {
+  font-size: 0.8em;
+}
+
+/* line 289, ../sass/ie.scss */
+footer ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1%;
+  font-family: 'trebuchet MS', Arial, sans-serif;
+  list-style-image: url(images/ico_liensexterne.png);
+}
+
+/* line 298, ../sass/ie.scss */
+footer li {
+  font-size: 0.8em;
+}
+
+/* line 303, ../sass/ie.scss */
+footer a:visited {
+  color: #760001;
+}
+
+/* line 308, ../sass/ie.scss */
+#listes {
+  display: flex;
+  margin-top: -5%;
+}
+
+/* line 314, ../sass/ie.scss */
+#liste1 {
+  flex: 1;
+}
+
+/* line 319, ../sass/ie.scss */
+footer {
+  background: url("ico_top.png") no-repeat top, url("separateur.png") repeat-x top, url("images/ombre.png") repeat-x top;
+  padding-top: 25px;
+  margin-top: 7.5%;
+  display: flex;
+}
+
+/* line 328, ../sass/ie.scss */
+#une {
+  font-style: bold;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/*formulaire*/
+/* line 337, ../sass/ie.scss */
+.titre {
+  text-align: center;
+}
+
+/*sprites*/
+/* line 344, ../sass/ie.scss */
+.sprite {
+  background-image: url(spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+}
+
+/* line 352, ../sass/ie.scss */
+.sprite-github {
+  width: 30px;
+  height: 30px;
+  background-position: -5px -5px;
+}
+
+/* line 359, ../sass/ie.scss */
+.sprite-gmail {
+  width: 30px;
+  height: 30px;
+  background-position: -45px -5px;
+}
+
+/* line 366, ../sass/ie.scss */
+.sprite-linkedin {
+  width: 30px;
+  height: 30px;
+  background-position: -5px -45px;
+}
+
+/* line 373, ../sass/ie.scss */
+.sprite-stackoverflow {
+  width: 30px;
+  height: 30px;
+  background-position: -45px -45px;
+}
+
+/* line 380, ../sass/ie.scss */
+.sprite-tumblr {
+  width: 30px;
+  height: 30px;
+  background-position: -85px -5px;
+}
+
+/* line 387, ../sass/ie.scss */
+.sprite-twitter {
+  width: 30px;
+  height: 30px;
+  background-position: -85px -45px;
+}
+
+/*media print*/
+@media print {
+  @page {
+    margin: 1cm;
+  }
+  /* line 403, ../sass/ie.scss */
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  p:first-line,
+  blockquote:first-line,
+  li:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 418, ../sass/ie.scss */
+  p {
+    widows: 4;
+    orphans: 3;
+  }
+
+  /* line 424, ../sass/ie.scss */
+  a[href^="http"]:not([href*="monsiteweb.com"]):after {
+    content: " (" attr(href) ") ";
+  }
+}
+/*media queries*/
+@media screen and (max-width: 1448px) {
+  /* line 431, ../sass/ie.scss */
+  nav {
+    margin-top: 20%;
+  }
+
+  /* line 436, ../sass/ie.scss */
+  header {
+    margin-top: -50px;
+  }
+
+  /* line 441, ../sass/ie.scss */
+  h1 {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 449, ../sass/ie.scss */
+  nav {
+    margin-top: 20%;
+  }
+
+  /* line 454, ../sass/ie.scss */
+  header {
+    margin-top: -50px;
+  }
+
+  /* line 459, ../sass/ie.scss */
+  h1 {
+    font-size: 2em;
+  }
+
+  /* line 464, ../sass/ie.scss */
+  #ad2 {
+    width: 20%;
+  }
+
+  /* line 469, ../sass/ie.scss */
+  #contener {
+    margin-top: 50%;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 477, ../sass/ie.scss */
+  .introduction {
+    margin-left: 75px;
+    width: 50%;
+  }
+
+  /* line 483, ../sass/ie.scss */
+  #ad2 {
+    display: none;
+  }
+}

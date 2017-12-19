@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Formulaire</title>
+  </head>
+
+  <nav>
+      <ul>
+          <li><a href="index.html">Accueil</a></li>
+      </ul>
+  </nav>
+
+  <h1>Le Journal</h1>
+  <h2 class="titre">Formulaire de contact</h2>
+
+  <body>
+
+    <form method="post" action="traitement.php">
+      <p>
+        <label for="pseudo">Pseudo</label> : <input type="text" name="pseudo" id="pseudo" size="10" maxlength="20" value="" placeholder="pseudo" autofocus="" />
+
+        <br /><br />
+        <label for="password">Votre mot de passe :</label>
+        <input type="password" name="password" id="password" required="" />
+
+        <br /><br />
+        <label for="ameliorer">Comment pensez-vous que je pourrais améliorer mon site ?</label>
+        <br /><br />
+        <textarea name="ameliorer" id="ameliorer" rows="5" cols="5" placeholder="test">test</textarea>
+
+        <br /><br />
+        <label for="email">Votre email :</label>
+        <input type="email" name="email" id="email">
+
+        <br /><br />
+        <label for="url">Votre site :</label>
+        <input type="url" name="url" id="url">
+
+        <br /><br />
+        <label for="tel">Votre tel :</label>
+        <input type="tel" name="tel" id="tel">
+
+        <br /><br />
+        <input type="number" min="7" max="77" step="10" value="7" />
+
+        <br /><br />
+        <input type="range" />
+
+        <input type="color" />
+
+        <br /><br />
+        <input type="date" />
+
+        <br /><br />
+        <input type="search" />
+
+        <br /><br />
+        Cochez les aliments que vous aimez manger :<br />
+        <input type="checkbox" name="frites" id="frites" checked="" /> <label for="frites">Frites</label><br />
+        <input type="checkbox" name="steak" id="steak" /> <label for="steak">Steak haché</label><br />
+        <input type="checkbox" name="epinards" id="epinards" /> <label for="epinards">Epinards</label><br />
+        <input type="checkbox" name="huitres" id="huitres" /> <label for="huitres">Huitres</label>
+
+        <fieldset>
+          <legend>Vos coordonnées</legend>
+
+          Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :<br />
+          <input type="radio" name="age" value="moins15" id="moins15" /> <label for="moins15">Moins de 15 ans</label><br />
+          <input type="radio" name="age" value="medium15-25" id="medium15-25" /> <label for="medium15-25">15-25 ans</label><br />
+          <input type="radio" name="age" value="medium25-40" id="medium25-40" /> <label for="medium25-40">25-40 ans</label><br />
+          <input type="radio" name="age" value="plus40" id="plus40" /> <label for="plus40">Encore plus vieux que ça ?!</label>
+
+          <br /><br />
+          <label for="pays">Dans quel pays habitez-vous ?</label><br />
+          <select name="pays" id="pays">
+             <optgroup label="Europe">
+                 <option value="france">France</option>
+                 <option value="espagne">Espagne</option>
+                 <option value="italie">Italie</option>
+                 <option value="royaume-uni">Royaume-Uni</option>
+             </optgroup>
+             <optgroup label="Amérique">
+                 <option value="canada" selected>Canada</option>
+                 <option value="etats-unis">Etats-Unis</option>
+             </optgroup>
+             <optgroup label="Asie">
+                 <option value="chine">Chine</option>
+                 <option value="japon">Japon</option>
+             </optgroup>
+          </select>
+        </fieldset>
+
+        <input type="submit" value="Envoyer" />
+
+        <input type="reset" value="Réinitialiser" />
+
+        <input type="image" value="Envoyer" src="ubi30_gh.png" />
+
+        <input type="button" name="bouton" value="Un bouton" />
+      </p>
+    </form>
+
+    <p>Texte après le formulaire</p>
+
+  </body>
+</html>
